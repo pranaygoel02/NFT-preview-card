@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.card{
+    position: relative;
+    width: 400px;
+    height: auto;
+    padding: 20px 0 10px;
+    background: hsl(216, 50%, 16%);
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 20px 80px hsl(218, 58%, 6%);
+    transform: scale(85%);
+}
+.photo{
+    width: 90%;
+    border-radius: 18px;
+    position: absolute;
+    display: block;
+    margin-left: 20px;
+    z-index: -1;
+}
+.text-box{
+    text-align: left;
+    padding: 0 22px 0;
+    margin: 35px auto 20px;
+}
+.header{
+    color: white;
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+}
+.header:hover,.name:hover{
+    color: #00FFF8;
+    cursor: pointer;
+}
+.para{
+    color: hsl(215, 32%, 57%);
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 21.5px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 25px;
+}
+.info img{
+    position: relative;
+    width: 1rem;
+    top: 4px;
+}
+.eth{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #00FFF8;
+}
+.days{
+    color: #8BACD9;
+    font-size: 1.2rem;
+}
+.days img{
+    width: 1.4rem;
+}
+hr{
+    width: 90%;
+    border: none;
+    margin: 30px auto 0;
+    border-top: solid 2px;
+    color: hsl(215, 32%, 27%);
+}
+.person{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.person img{
+    width: 10%;
+    border: 1px solid white ;
+    border-radius: 100%; 
+    margin-right: 10px;
+}
+.creation{
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    color: hsl(218, 44%, 22%);
+}
+.attribution{
+    color:hsl(220, 15%, 55%);
+    position: relative;
+    top: -30px;
+    width: 250px;
+    text-align: center;
+    line-height: 1.2;
+}
+.photo-hover{
+    width: 90%;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00fff77a ;
+    margin: 0 auto;
+    border-radius: 18px;
+    visibility: hidden;
+}
+
+.photo-hover img{
+    width: 30%;
+}
+
+.photo:hover + .photo-hover{
+    visibility: visible;
+    display: flex;
+    cursor: pointer;
+}
